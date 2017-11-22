@@ -75,10 +75,7 @@ class LoremIpsum {
    */
   public static function getWords() {
     if (!isset(self::$words)) {
-      self::$words = explode(' ', self::THE_STRING);
-      array_walk(self::$words, function (&$word) {
-        $word = rtrim($word, '.,');
-      });
+      self::$words = str_word_count(self::THE_STRING, 1);
     }
 
     return self::$words;
