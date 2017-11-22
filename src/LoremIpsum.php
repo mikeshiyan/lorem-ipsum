@@ -111,7 +111,11 @@ class LoremIpsum {
   protected static function getInfiniteArrayOffset(array $array, $offset) {
     $count = count($array);
 
-    return $array[$offset % $count + ($offset < 0 ? $count : 0)];
+    if (($offset %= $count) < 0) {
+      $offset += $count;
+    }
+
+    return $array[$offset];
   }
 
 }
