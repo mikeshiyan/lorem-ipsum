@@ -1,5 +1,7 @@
 <?php
 
+namespace Shiyan\LoremIpsum;
+
 /**
  * Manipulates the Lorem Ipsum string in various ways.
  */

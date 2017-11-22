@@ -1,0 +1,24 @@
+{
+    "name": "shiyan/lorem-ipsum",
+    "description": "The Lorem Ipsum string manipulations.",
+    "license": "MIT",
+    "require": {
+        "php": "^5.3 || ^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shiyan\\LoremIpsum\\": "src/"
+        }
+    },
+    "keywords": ["lorem", "ipsum", "string", "manipulations", "php", "oop"],
+    "support": {
+        "source": "https://github.com/mikeshiyan/lorem-ipsum",
+        "issues": "https://github.com/mikeshiyan/lorem-ipsum/issues"
+    },
+    "authors": [
+        {
+            "name": "Mike Shiyan",
+            "homepage": "https://github.com/mikeshiyan"
+        }
+    ]
+}
